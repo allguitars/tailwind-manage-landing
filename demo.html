@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Manage Landing Page</title>
@@ -29,16 +30,40 @@
           class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
           >Get Started</a
         >
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Product</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+        </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="hero">
-      <!-- Flex container -->
+      <!-- Flex Container -->
       <div
         class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
       >
-        <!-- Left Part -->
+        <!-- Left item -->
         <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
           <h1
             class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
@@ -57,7 +82,7 @@
             >
           </div>
         </div>
-        <!-- Right Part Image -->
+        <!-- Image -->
         <div class="md:w-1/2">
           <img src="img/illustration-intro.svg" alt="" />
         </div>
@@ -65,12 +90,12 @@
     </section>
 
     <!-- Features Section -->
-    <section id="featues">
+    <section id="features">
       <!-- Flex container -->
       <div
         class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
       >
-        <!-- What's different -->
+        <!-- What's Different -->
         <div class="flex flex-col space-y-12 md:w-1/2">
           <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
             What's different about Manage?
@@ -82,7 +107,7 @@
           </p>
         </div>
 
-        <!-- Number List -->
+        <!-- Numbered List -->
         <div class="flex flex-col space-y-8 md:w-1/2">
           <!-- List Item 1 -->
           <div
@@ -101,6 +126,7 @@
                 </h3>
               </div>
             </div>
+
             <div>
               <h3 class="hidden mb-4 text-lg font-bold md:block">
                 Track company-wide progress
@@ -127,13 +153,14 @@
                   02
                 </div>
                 <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Advanced built-in report
+                  Advanced built-in reports
                 </h3>
               </div>
             </div>
+
             <div>
               <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Advanced built-in report
+                Advanced built-in reports
               </h3>
               <p class="text-darkGrayishBlue">
                 Set internal delivery estimates and track progress toward
@@ -160,6 +187,7 @@
                 </h3>
               </div>
             </div>
+
             <div>
               <h3 class="hidden mb-4 text-lg font-bold md:block">
                 Everything you need in one place
@@ -177,13 +205,13 @@
 
     <!-- Testimonials -->
     <section id="testimonials">
-      <!-- Container to heading and testimonial blocks -->
+      <!-- Container to heading and testm blocks -->
       <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
         <!-- Heading -->
         <h2 class="text-4xl font-bold text-center">
           What's Different About Manage?
         </h2>
-        <!-- Testimonials container -->
+        <!-- Testimonials Container -->
         <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
           <!-- Testimonial 1 -->
           <div
@@ -224,7 +252,6 @@
             </p>
           </div>
         </div>
-
         <!-- Button -->
         <div class="my-16">
           <a
@@ -270,13 +297,13 @@
           class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
         >
           <div class="mx-auto my-6 text-center text-white md:hidden">
-            Copyright &copy; 2024, All Rights Reserved
+            Copyright &copy; 2022, All Rights Reserved
           </div>
           <!-- Logo -->
           <div>
             <img src="img/logo-white.svg" class="h-8" alt="" />
           </div>
-          <!-- Social links container -->
+          <!-- Social Links Container -->
           <div class="flex justify-center space-x-4">
             <!-- Link 1 -->
             <a href="#">
@@ -314,6 +341,7 @@
             <a href="#" class="hover:text-brightRed">Privacy Policy</a>
           </div>
         </div>
+
         <!-- Input Container -->
         <div class="flex flex-col justify-between">
           <form>
@@ -331,10 +359,12 @@
             </div>
           </form>
           <div class="hidden text-white md:block">
-            Copyright &copy; 2024, All Rights Reserved
+            Copyright &copy; 2022, All Rights Reserved
           </div>
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
